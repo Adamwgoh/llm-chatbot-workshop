@@ -1,0 +1,39 @@
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "llm-chatbot-workshop"
+version = "0.1.0"
+description = "My awesome project"
+authors = ["Your Name <your@email.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+jupyter = "^1.0"
+openai = "^0.27"
+torch = "^2.5.0"
+pymupdf = "^1.24.12"
+tiktoken = {extras = ["openai-public"], version = "^0.8.0"}
+langchain = "^0.3.4"
+pymilvus = "^2.4.8"
+langchain-community = "^0.3.3"
+pymupdf4llm = "^0.0.17"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+mypy = "^1.13.0"
+pylint = "^3.3.1"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+pylance = "^0.19.1"
+
+
+[tool.poetry.group.tutorial-01.dependencies]
+pymilvus = "^2.4.8"
+

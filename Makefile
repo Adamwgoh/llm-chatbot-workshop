@@ -1,11 +1,14 @@
 .PHONY: help
 
-help: @echo "Available targets:" @echo " all : Build the target" @echo " clean : Clean up object files and executable".PHONY: help
+start-ollama:
+	ollama run llama3
 
-help: @echo "Available targets:" @echo " all : Build the target" @echo " clean : Clean up object files and executable"
-
-tutorial:
+setup-jupyter:
 	cd notebooks
-	pip install -g poetry
-	poetry install
-	jupyter notebook
+	pip install --user poetry
+	poetry install --all-extras
+
+setup-chatbot:
+	nvm install --latest-npm
+	npm install
+	npm run dev

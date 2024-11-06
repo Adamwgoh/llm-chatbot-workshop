@@ -4,6 +4,7 @@
 
 <h1 align="center">
   Fully-featured & beautiful web interface for Ollama LLMs
+  A LLM Chatbot workshop based off [nextjs-ollama-llm-ui](https://github.com/jakobhoeg/nextjs-ollama-llm-ui)
 </h1>
 
 <div align="center">
@@ -18,20 +19,15 @@ This project aims to be the easiest way for you to get started with LLMs. No ted
 
 # Features ✨
 
-- **Beautiful & intuitive UI:** Inspired by ChatGPT, to enhance similarity in the user experience.
-- **Fully local:** Stores chats in localstorage for convenience. No need to run a database.
-- **Fully responsive:** Use your phone to chat, with the same ease as on desktop.
-- **Easy setup:** No tedious and annoying setup required. Just clone the repo and you're good to go!
-- **Code syntax highligting:** Messages that include code, will be highlighted for easy access.
-- **Copy codeblocks easily:** Easily copy the highlighted code with one click.
-- **Download/Pull & Delete models:** Easily download and delete models directly from the interface.
-- **Switch between models:** Switch between models fast with a click.
-- **Chat history:** Chats are saved and easily accessed.
-- **Light & Dark mode:** Switch between light & dark mode.
+- In this series, you will go through the following: 
+    - Setting up various LLM API to work with your Chatbot UI
+    - Learning about embeddings and vector DB 
+    - Learning various ways of LLM inferencing
+    - How to update Chatbot UI with more informative UI features
+    - How to update Chatbot UI to support multi-modal
+    - Deploying Chatbot UI to a deployable endpoint
 
-# Preview
-
-https://github.com/jakobhoeg/nextjs-ollama-llm-ui/assets/114422072/08eaed4f-9deb-4e1b-b87a-ba17d81b9a02
+- UI is based off a template chatbot UI
 
 # Requisites ⚙️
 
@@ -39,6 +35,12 @@ To use the web interface, these requisites must be met:
 
 1. Download [Ollama](https://ollama.com/download) and have it running. Or run it in a Docker container. Check the [docs](https://github.com/ollama/ollama) for instructions.
 2. Node.js (18+) and npm is required. [Download](https://nodejs.org/en/download)
+
+# Deployment
+
+This project uses Fly.io as part of the deployment. Please note that the Github actions CICD only deploys the webapp to fly.io as a NextJS App.
+
+If you are intending to deploy your own LLM, do 
 
 # Deploy your own to Vercel or Netlify in one click ✨
 
